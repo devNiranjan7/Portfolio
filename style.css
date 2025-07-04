@@ -14,7 +14,7 @@ h1, h2, h3 {
 header.hero-section {
   background: linear-gradient(145deg, #3e0d5f, #1e0032);
   padding: 3rem 2rem;
-  min-height: 100vh;
+  min-height: 70vh;
 }
 
 .navbar {
@@ -22,9 +22,9 @@ header.hero-section {
   justify-content: space-between;
   align-items: center;
   background: #1f0033;
-  padding: 0 2rem;
+  padding: 0 3rem;
   border-radius: 15px;
-  margin-bottom: 2rem;
+  margin: 0 2em 3em;
 }
 
 .logo {
@@ -116,7 +116,7 @@ header.hero-section {
 .projects-section,
 .contact-section {
   padding: 4rem 2rem;
-  max-width: 1100px;
+  max-width: 1000px;
   margin: auto;
 }
 
@@ -131,6 +131,7 @@ header.hero-section {
   flex: 1 1 250px;
   background: #1f0033;
   padding: 1rem;
+  text-align: center;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(187, 134, 252, 0.2);
 }
@@ -144,7 +145,7 @@ header.hero-section {
 
 .project-card {
   background: #1f0033;
-  border-radius: 12px;
+  border-radius: 10px;
   padding: 1rem;
   text-align: center;
   box-shadow: 0 0 15px rgba(187, 134, 252, 0.2);
@@ -153,7 +154,7 @@ header.hero-section {
 .project-card img {
   width: 100%;
   border-radius: 8px;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .project-card h3 {
@@ -215,7 +216,7 @@ footer {
 }
 
 blockquote {
-  margin-top: 1rem;
+  margin-top: 2rem;
   font-style: italic;
   color: #bb86fc;
   padding-left: 1rem;
