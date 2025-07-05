@@ -3,16 +3,16 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: #0f001a;
-  color: #fff;
+  background: #184653;
+  color: #8db1c6;
 }
 
 h1, h2, h3 {
-  color: #ffffff;
+  color: #028090;
 }
 
 header.hero-section {
-  background: linear-gradient(145deg, #3e0d5f, #1e0032);
+  background-color: #e7ecef;
   padding: 3rem 2rem;
   min-height: 70vh;
 }
@@ -21,16 +21,16 @@ header.hero-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #1f0033;
+  background: #184653;
   padding: 0 3rem;
   border-radius: 15px;
-  margin: 0 2em 3em;
+  margin: 0 2em ;
 }
 
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #fff;
+  color: #8db1c6;
 }
 
 .nav-links {
@@ -40,29 +40,14 @@ header.hero-section {
 }
 
 .nav-links a {
-  color: #fff;
+  color: #8db1c6;
   text-decoration: none;
   transition: 0.3s;
 }
 
 .nav-links a:hover {
-  color: #bb86fc;
+  color: #7e7f9a;
 }
-/* 
-.contact-btn {
-  padding: 0.5rem 1rem;
-  background-color: #bb86fc;
-  border: none;
-  border-radius: 8px;
-  color: white;
-  cursor: pointer;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.contact-btn:hover {
-  background-color: #9a5af7;
-} */
 
 .hero-content {
   display: flex;
@@ -79,12 +64,13 @@ header.hero-section {
 .hero-content h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  color: #8db1c6;
 }
 
 .hero-content h2 {
   font-size: 1.3rem;
   margin-bottom: 1rem;
-  color: #bb86fc;
+  color: #335c67;
 }
 
 .hero-content p {
@@ -96,7 +82,7 @@ header.hero-section {
 .social-links a {
   margin-right: 1rem;
   text-decoration: none;
-  color: #bb86fc;
+  color: #335c67;
   font-weight: 500;
   transition: 0.3s;
 }
@@ -108,7 +94,11 @@ header.hero-section {
 .hero-img img {
   max-width: 250px;
   border-radius: 50%;
-  box-shadow: 0 0 20px #bb86fc;
+  box-shadow: 0 0 20px #124559;
+}
+
+.skills-section,.projects-section,.contact-section h2{
+   text-align: center;
 }
 
 .about-section,
@@ -144,7 +134,7 @@ header.hero-section {
 }
 
 .project-card {
-  background: #1f0033;
+  background: #8db1c6;
   border-radius: 10px;
   padding: 1rem;
   text-align: center;
@@ -211,7 +201,9 @@ header.hero-section {
   background-color: #9a5af7;
 }
 
-footer {
+footer {display: flex;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
   padding: 2rem;
   background: #140022;
@@ -223,9 +215,9 @@ footer {
 blockquote {
   margin-top: 2rem;
   font-style: italic;
-  color: #bb86fc;
+  color: #028090;
   padding-left: 1rem;
-  border-left: 3px solid #bb86fc;
+  border-left: 3px solid #028090;
 }
 
 @media screen and (max-width: 768px) {
@@ -244,4 +236,16 @@ blockquote {
   .hero-img img {
     max-width: 180px;
   }
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.link-img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s;
 }
