@@ -1,126 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dev Niranjan | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-  <header class="hero-section">
-    <nav class="navbar">
-      <div class="logo"><img src="images/DevLogo.png" alt="Dev Niranjan"></div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <!-- Fixed Navbar -->
+  <nav class="navbar">
+    <div class="logo"><img src="images/DevLogo.png" alt="Dev Niranjan" /></div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <div class="hero-content" id="home">
-      <div class="text">
-        <h1>Hi, I'm Dev Niranjan</h1>
-        <h2>Crafting the web while decoding the logic of Java and C.</h2>
-        <p>I enjoy turning real-world problems into meaningful web solutions through clean design and efficient code.
-          With a focus on responsiveness and usability, I aim to build applications that blend creativity with logic to
-          deliver impactful digital experiences.</p>
-        <div class="social-links">
-          <a href="https://github.com/devNiranjan7" target="_blank">GitHub</a>
-          <a href="https://www.linkedin.com/in/dev-niranjan-5810a1337" target="_blank">LinkedIn</a>
-          <a href="mailto:devniranjan0111@gmail.com">Email</a>
+  <!-- Sliding Main Content (hero + all sections) -->
+  <div class="main-content" id="mainContent">
+
+    <!-- Hero Section -->
+    <header class="hero-section" id="home">
+      <div class="hero-content">
+        <div class="text">
+          <h1>Hi, I'm Dev Niranjan</h1>
+          <h2>Crafting the web while decoding the logic of Java and C.</h2>
+          <p>I enjoy turning real-world problems into meaningful web solutions through clean design and efficient code.
+            With a focus on responsiveness and usability, I aim to build applications that blend creativity with logic to
+            deliver impactful digital experiences.</p>
+          <div class="social-links">
+            <a href="https://github.com/devNiranjan7" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/dev-niranjan-5810a1337" target="_blank">LinkedIn</a>
+            <a href="mailto:devniranjan0111@gmail.com">Email</a>
+          </div>
+        </div>
+        <div class="hero-img">
+          <img src="images/Dev_Niranjan.jpg" alt="Dev Avatar" />
         </div>
       </div>
-      <div class="hero-img">
-        <!-- Add your image here -->
-        <img src="images/Dev_Niranjan.jpg" alt="Dev Avatar">
-      </div>
-    </div>
-  </header>
+    </header>
 
-  <section class="about-section" id="about">
-    <h2>About Me</h2>
-    <p>Hey there! I'm Dev Niranjan, an Information Technology student at Harcourt Butler Technical University, currently
-      maintaining a CGPA of 8.68. I'm deeply passionate about frontend development and design, always exploring new ways
-      to build clean, responsive, and user-friendly web experiences. With a strong foundation in programming and a
-      creative mindset, I enjoy bringing ideas to life through code while continuously learning and growing through
-      hands-on projects.</p>
-    <p>Alongside my academic journey, I'm working in Public Relations at Notion x HBTU, where I get to blend
-      communication and creativity to engage with the community. Whether it’s building, designing, or collaborating, I
-      thrive at the intersection of technology and expression.</p>
-    <blockquote>"Design with purpose, code with clarity, and connect with impact."</blockquote>
-  </section>
+    <!-- About -->
+    <section class="about-section" id="about">
+      <h2>About Me</h2>
+      <p>Hey there! I'm Dev Niranjan, an Information Technology student at Harcourt Butler Technical University, currently
+        maintaining a CGPA of 8.68. I'm deeply passionate about frontend development and design...</p>
+      <blockquote>"Design with purpose, code with clarity, and connect with impact."</blockquote>
+    </section>
 
-  <section class="skills-section">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-category">
-        <h3>Languages</h3>
-        <p>C, Java, JavaScript</p>
+    <!-- Skills -->
+    <section class="skills-section">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category"><h3>Languages</h3><p>C, Java, JavaScript</p></div>
+        <div class="skill-category"><h3>Frontend</h3><p>HTML, CSS</p></div>
+        <div class="skill-category"><h3>Tools & Platforms</h3><p>Canva, GitHub, Vercel, VSCode</p></div>
       </div>
-      <div class="skill-category">
-        <h3>Frontend</h3>
-        <p>HTML, CSS</p>
-      </div>
-      <div class="skill-category">
-        <h3>Tools & Platforms</h3>
-        <p>Canva, GitHub, Vercel, VSCode</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="projects-section" id="projects">
-    <h2>My Projects</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <img src="images/TIndop-snap.png" alt="Tindog project image">
-        <h3>Tindog</h3>
-
-        <a href="https://github.com/devNiranjan7/Web_Projects/tree/main/TinDog-Start-master" target="_blank">GitHub</a>
-        | <a href="https://tindog-git-main-dev-niranjans-projects.vercel.app" target="_blank">Live Demo</a>
-
+    <!-- Projects -->
+    <section class="projects-section" id="projects">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="images/TIndop-snap.png" alt="Tindog project image" />
+          <h3>Tindog</h3>
+          <a href="https://github.com/devNiranjan7/Web_Projects/tree/main/TinDog-Start-master" target="_blank">GitHub</a> |
+          <a href="https://tindog-git-main-dev-niranjans-projects.vercel.app" target="_blank">Live Demo</a>
+        </div>
+        <div class="project-card">
+          <img src="images/netflix-clone.png" alt="Netflix clone image" />
+          <h3>Netflix Clone</h3>
+          <a href="https://github.com/devNiranjan7/streaming-site-clone" target="_blank">GitHub</a> |
+          <a href="https://netflix-clone-git-main-dev-niranjans-projects.vercel.app" target="_blank">Live Demo</a>
+        </div>
+        <div class="project-card">
+          <img src="images/amazon-snap.png" alt="Amazon clone image" />
+          <h3>Amazon Clone</h3>
+          <a href="https://github.com/devNiranjan7/shopping-site-clone" target="_blank">GitHub</a> |
+          <a href="https://amazon-clone-git-main-dev-niranjans-projects.vercel.app" target="_blank">Live Demo</a>
+        </div>
       </div>
-      <div class="project-card">
-        <img src="images/netflix-clone.png" alt="Netflix clone image">
-        <h3>Netflix Clone</h3>
-        <a href="https://github.com/devNiranjan7/streaming-site-clone" target="_blank">GitHub</a> | <a
-          href="https://netflix-clone-git-main-dev-niranjans-projects.vercel.app" target="_blank">Live Demo</a>
-      </div>
-      <div class="project-card">
-        <img src="images/amazon-snap.png" alt="Amazon clone image">
-        <h3>Amazon Clone</h3>
-        <a href="https://github.com/devNiranjan7/shopping-site-clone" target="_blank">GitHub</a> | <a
-          href="https://amazon-clone-git-main-dev-niranjans-projects.vercel.app" target="_blank">Live Demo</a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="contact-section" id="contact">
-    <h2>Let's Create Something Amazing Together</h2>
-    <form class="contact-form" action="https://formspree.io/f/xanjkqlv" method="POST">
-      <input type="text" name="Name" placeholder="Name" required>
-      <input type="email" name="Email" placeholder="Email" required>
-      <textarea name="Message" placeholder="Enter message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+    <!-- Contact -->
+    <section class="contact-section" id="contact">
+      <h2>Let's Create Something Amazing Together</h2>
+      <form class="contact-form" action="https://formspree.io/f/xanjkqlv" method="POST">
+        <input type="text" name="Name" placeholder="Name" required />
+        <input type="email" name="Email" placeholder="Email" required />
+        <textarea name="Message" placeholder="Enter message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
 
-  <footer>
-    <p style="display: flex; align-items:center;"><img style="width: 120px; height: 60px;" src="images/DevLogo.png" alt="Dev Niranjan">&copy; 2025 Dev Niranjan. All rights reserved.</p>
-    <div class="footer-links">
-      <a href="https://github.com/devNiranjan7"><img class="link-img"
-          src="https://www.svgrepo.com/show/217753/github.svg" alt="github-logo"></a>
-      <a href="https://www.linkedin.com/in/dev-niranjan-5810a1337"><img class="link-img"
-          src="https://www.svgrepo.com/show/138936/linkedin.svg" alt="github-logo"></a>
-      <a href="mailto:devniranjan0111@gmail.com"><img class="link-img"
-          src="https://icongr.am/feather/mail.svg?size=24&color=4b5563" alt="github-logo"></a>
-    </div>
-  </footer>
+    <!-- Footer -->
+    <footer>
+      <p style="display: flex; align-items: center;">
+        <img style="width: 120px; height: 60px;" src="images/DevLogo.png" alt="Dev Niranjan" />
+        &copy; 2025 Dev Niranjan. All rights reserved.
+      </p>
+      <div class="footer-links">
+        <a href="https://github.com/devNiranjan7"><img class="link-img" src="https://www.svgrepo.com/show/217753/github.svg" alt="github-logo" /></a>
+        <a href="https://www.linkedin.com/in/dev-niranjan-5810a1337"><img class="link-img" src="https://www.svgrepo.com/show/138936/linkedin.svg" alt="linkedin-logo" /></a>
+        <a href="mailto:devniranjan0111@gmail.com"><img class="link-img" src="https://icongr.am/feather/mail.svg?size=24&color=4b5563" alt="email-icon" /></a>
+      </div>
+    </footer>
+
+  </div> <!-- End main-content -->
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById("navLinks");
+      const mainContent = document.getElementById("mainContent");
+
+      navLinks.classList.toggle("active");
+      mainContent.classList.toggle("pushed-down");
+    }
+  </script>
 </body>
-
 </html>

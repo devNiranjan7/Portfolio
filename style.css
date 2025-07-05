@@ -20,7 +20,7 @@ header.hero-section {
 }
 
 
-.navbar {
+/* .navbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -34,8 +34,29 @@ header.hero-section {
    margin: 0;
   border-radius: 0;
   box-sizing: border-box;
+} */
+
+.navbar {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #184653;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
 }
 
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: #8db1c6;
+  cursor: pointer;
+}
 
 .logo img{
   width: 120px;
@@ -46,6 +67,10 @@ header.hero-section {
   display: flex;
   list-style: none;
   gap: 1.5rem;
+}
+
+.nav-links li{
+  list-style: none;
 }
 
 .nav-links a {
@@ -231,24 +256,50 @@ blockquote {
   padding-left: 1rem;
   border-left: 3px solid #028090;
 }
-
 @media screen and (max-width: 768px) {
-
-  header.hero-section{
-    padding: 18rem 3rem 3rem;
+  .hamburger {
+    display: block;
   }
+header.hero-section{
+  
+  padding: 6rem 2rem 3rem; 
+}
+
   .hero-content {
     flex-direction: column;
     text-align: left;
-  }
-  .navbar {
-    flex-direction: column;
-    gap: 1rem;
-  }
-  .nav-links {
-    flex-direction: column;
+  }.navbar {
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
   }
+  
+  .nav-links {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: height 0.3s ease, opacity 0.3s ease;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #184653;
+    padding: 0 2rem;
+    margin: 0;
+    z-index: 999;
+  }
+
+  .nav-links.active {
+    height: 240px; /* adjust based on number of links */
+    opacity: 1;
+    padding: 1rem 2rem;
+  }
+
+  .nav-links li {
+    margin: 0.5rem 0;
+  }
+
   .hero-img{
     text-align: center;
   }
@@ -267,4 +318,12 @@ blockquote {
   width: 24px;
   height: 24px;
   transition: transform 0.3s;
+}
+
+.main-content {
+  transition: transform 0.3s ease;
+}
+
+.main-content.pushed-down {
+  transform: translateY(250px); 
 }
