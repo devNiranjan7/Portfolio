@@ -7,12 +7,6 @@ body {
   color: #d6e5e3;
 }
 
-/* h1,
-h2,
-h3 {
-  color: #74b3ce;
-} */
-
 a {
   text-decoration: none;
   color: inherit;
@@ -85,7 +79,7 @@ a {
 }
 
 header.hero-section {
-  background-image: linear-gradient(#ebf4f5,#d6e5e3,#b8c6c4);
+  background-image: linear-gradient(#ebf4f5, #d6e5e3, #b8c6c4);
   padding: 7rem 2rem 3rem;
   min-height: 70vh;
 }
@@ -147,12 +141,13 @@ header.hero-section {
   text-align: center;
   color: #184653;
 }
+
 .projects-section h2 {
   text-align: center;
   color: #e7ecef;
 }
 
-.about-section h2{
+.about-section h2 {
   color: #74b3ce;
 }
 
@@ -170,7 +165,7 @@ header.hero-section {
   width: 100%;
 }
 
-.skills-section h3{
+.skills-section h3 {
   color: #74b3ce;
 }
 
