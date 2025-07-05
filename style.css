@@ -81,7 +81,7 @@ a {
 }
 
 .nav-links a:hover {
-  color: #7e7f9a;
+  color: #9ed570;
 }
 
 header.hero-section {
@@ -128,7 +128,7 @@ header.hero-section {
 }
 
 .social-links a:hover {
-  color: #ffffff;
+  color: #8db1c6;
 }
 
 .hero-img {
@@ -143,16 +143,25 @@ header.hero-section {
 }
 
 .skills-section,
-.projects-section,
-.contact-section h2 {
+.projects-section h2 {
   text-align: center;
 }
 
 .about-section,
-.skills-section,
-.projects-section,
-.contact-section {
+.projects-section {
   padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.skills-section {
+  background-color: #e7ecef;
+  padding: 4rem 2rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.skills-container {
   max-width: 1000px;
   margin: auto;
 }
@@ -166,11 +175,15 @@ header.hero-section {
 
 .skill-category {
   flex: 1 1 250px;
-  background: #1f0033;
+  background: #184653;
   padding: 1rem;
   text-align: center;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(187, 134, 252, 0.2);
+}
+
+.skill-category p {
+  color: #ffffff;
 }
 
 .projects-grid {
@@ -200,7 +213,8 @@ header.hero-section {
 }
 
 .project-card a {
-  color: black;
+  margin-right: 5px;
+  color: #184653;
   text-decoration: none;
   font-weight: 500;
 }
@@ -208,6 +222,25 @@ header.hero-section {
 .project-card a:hover {
   color: #fff;
 }
+
+.contact-section {
+  background-color: #e7ecef;
+  padding: 4rem 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.contact-section h2 {
+  text-align: center;
+  color: #028090;
+  margin-bottom: 2rem;
+}
+
 
 .contact-form {
   display: flex;
@@ -224,7 +257,7 @@ header.hero-section {
   border-radius: 8px;
   font-size: 1rem;
   outline: none;
-  background: #2c0049;
+  background: #184653;
   color: white;
 }
 
@@ -234,7 +267,7 @@ header.hero-section {
 
 .contact-form button {
   padding: 0.75rem;
-  background-color: #bb86fc;
+  background-color: #8db1c6;
   border: none;
   border-radius: 8px;
   color: white;
@@ -244,7 +277,7 @@ header.hero-section {
 }
 
 .contact-form button:hover {
-  background-color: #9a5af7;
+  background-color: #6590a8;
 }
 
 footer {
@@ -253,10 +286,9 @@ footer {
   align-items: center;
   text-align: center;
   padding: 2rem;
-  background: #140022;
+  background: #184653;
   font-size: 0.9rem;
-  color: #aaa;
-  margin-top: 4rem;
+  color: #8db1c6;
 }
 
 .footer-links {
@@ -274,9 +306,9 @@ footer {
 blockquote {
   margin-top: 2rem;
   font-style: italic;
-  color: #028090;
+  color: #9ed570;
   padding-left: 1rem;
-  border-left: 3px solid #028090;
+  border-left: 3px solid #9ed570;
 }
 
 .main-content {
