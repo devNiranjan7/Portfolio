@@ -81,14 +81,14 @@ a {
 header.hero-section {
   background-image: linear-gradient(#ebf4f5, #d6e5e3, #b8c6c4);
   padding: 7rem 2rem 3rem;
-  min-height: 70vh;
+  min-height: 60vh;
 }
 
 .hero-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 13rem;
+  gap: 10rem;
 }
 
 .hero-content .text {
@@ -372,6 +372,7 @@ blockquote {
   .hero-content {
     flex-direction: column;
     text-align: left;
+    gap: 3rem;
   }
 
   .hero-img img {
