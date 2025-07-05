@@ -3,15 +3,15 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  background: #184653;
-  color: #8db1c6;
+  background: #60777f;
+  color: #d6e5e3;
 }
 
-h1,
+/* h1,
 h2,
 h3 {
-  color: #028090;
-}
+  color: #74b3ce;
+} */
 
 a {
   text-decoration: none;
@@ -24,7 +24,7 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  background: #184653;
+  background: #495a60;
   z-index: 1000;
   display: flex;
   justify-content: space-between;
@@ -75,7 +75,7 @@ a {
 }
 
 .nav-links a {
-  color: #8db1c6;
+  color: #74b3ce;
   text-decoration: none;
   transition: 0.3s;
 }
@@ -85,7 +85,7 @@ a {
 }
 
 header.hero-section {
-  background-color: #e7ecef;
+  background-image: linear-gradient(#ebf4f5,#d6e5e3);
   padding: 7rem 2rem 3rem;
   min-height: 70vh;
 }
@@ -104,16 +104,17 @@ header.hero-section {
 .hero-content h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: #8db1c6;
+  color: #2e6a7b;
 }
 
 .hero-content h2 {
   font-size: 1.3rem;
   margin-bottom: 1rem;
-  color: #335c67;
+  color: #9ed570;
 }
 
 .hero-content p {
+  color: #60777f;
   font-size: 1rem;
   margin-bottom: 1rem;
   line-height: 1.6;
@@ -122,13 +123,13 @@ header.hero-section {
 .social-links a {
   margin-right: 1rem;
   text-decoration: none;
-  color: #335c67;
+  color: #2e6a7b;
   font-weight: 500;
   transition: 0.3s;
 }
 
 .social-links a:hover {
-  color: #8db1c6;
+  color: #9ed570;
 }
 
 .hero-img {
@@ -142,9 +143,17 @@ header.hero-section {
   box-shadow: 0 0 20px #124559;
 }
 
-.skills-section,
+.skills-section h2 {
+  text-align: center;
+  color: #184653;
+}
 .projects-section h2 {
   text-align: center;
+  color: #e7d9d9;
+}
+
+.about-section h2{
+  color: #74b3ce;
 }
 
 .about-section,
@@ -161,6 +170,10 @@ header.hero-section {
   width: 100%;
 }
 
+.skills-section h3{
+  color: #d79494;
+}
+
 .skills-container {
   max-width: 1000px;
   margin: auto;
@@ -174,16 +187,13 @@ header.hero-section {
 }
 
 .skill-category {
+  border: 2px solid #d79494;
+  box-shadow: 2px 2px 10px rgb(0, 0, 0);
   flex: 1 1 250px;
-  background: #184653;
+  background: #60777f;
   padding: 1rem;
   text-align: center;
   border-radius: 10px;
-  box-shadow: 0 0 15px rgba(187, 134, 252, 0.2);
-}
-
-.skill-category p {
-  color: #ffffff;
 }
 
 .projects-grid {
@@ -194,11 +204,12 @@ header.hero-section {
 }
 
 .project-card {
-  background: #8db1c6;
+  background: #e6e0e0;
   border-radius: 10px;
   padding: 1rem;
   text-align: center;
-  box-shadow: 0 0 15px rgba(187, 134, 252, 0.2);
+  border: 2px solid #d79494;
+
 }
 
 .project-card img {
@@ -209,12 +220,12 @@ header.hero-section {
 
 .project-card h3 {
   margin: 0.5rem 0;
-  color: #fff;
+  color: #d79494;
 }
 
 .project-card a {
   margin-right: 5px;
-  color: #184653;
+  color: #53acd2;
   text-decoration: none;
   font-weight: 500;
 }
@@ -237,7 +248,7 @@ header.hero-section {
 
 .contact-section h2 {
   text-align: center;
-  color: #028090;
+  color: #184653;
   margin-bottom: 2rem;
 }
 
@@ -252,13 +263,15 @@ header.hero-section {
 
 .contact-form input,
 .contact-form textarea {
+  border: 2px solid #d79494;
+  box-shadow: 2px 2px 10px rgb(0, 0, 0);
   padding: 1rem;
   border: none;
   border-radius: 8px;
   font-size: 1rem;
   outline: none;
-  background: #184653;
-  color: white;
+  background: #e6e0e0;
+  color: rgb(0, 0, 0);
 }
 
 .contact-form textarea {
@@ -266,8 +279,10 @@ header.hero-section {
 }
 
 .contact-form button {
+  border: 2px solid #0c6062;
+  box-shadow: 2px 2px 10px rgb(0, 0, 0);
   padding: 0.75rem;
-  background-color: #8db1c6;
+  background-color: #60777f;
   border: none;
   border-radius: 8px;
   color: white;
@@ -285,10 +300,10 @@ footer {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  padding: 2rem;
-  background: #184653;
+  padding: 0 2rem;
+  background: #60777f;
   font-size: 0.9rem;
-  color: #8db1c6;
+  color: #ccd4d7;
 }
 
 .footer-links {
@@ -306,9 +321,9 @@ footer {
 blockquote {
   margin-top: 2rem;
   font-style: italic;
-  color: #9ed570;
+  color: #74b3ce;
   padding-left: 1rem;
-  border-left: 3px solid #9ed570;
+  border-left: 3px solid #74b3ce;
 }
 
 .main-content {
@@ -340,7 +355,7 @@ blockquote {
     top: 100%;
     left: 0;
     width: 100%;
-    background: #184653;
+    background: #60777f;
     padding: 0 2rem;
     margin: 0;
     z-index: 999;
