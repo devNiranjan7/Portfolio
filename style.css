@@ -1,4 +1,3 @@
-/* === Base Styles === */
 body {
   margin: 0;
   padding: 0;
@@ -8,7 +7,9 @@ body {
   color: #8db1c6;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: #028090;
 }
 
@@ -17,7 +18,6 @@ a {
   color: inherit;
 }
 
-/* === Navbar === */
 .navbar {
   box-sizing: border-box;
   position: fixed;
@@ -37,7 +37,6 @@ a {
   height: 60px;
 }
 
-/* === Hamburger Icon === */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -56,14 +55,15 @@ a {
 .hamburger.open .bar:nth-child(1) {
   transform: rotate(45deg) translateY(8px);
 }
+
 .hamburger.open .bar:nth-child(2) {
   opacity: 0;
 }
+
 .hamburger.open .bar:nth-child(3) {
   transform: rotate(-45deg) translateY(-8px);
 }
 
-/* === Nav Links === */
 .nav-links {
   display: flex;
   list-style: none;
@@ -84,7 +84,6 @@ a {
   color: #7e7f9a;
 }
 
-/* === Hero Section === */
 header.hero-section {
   background-color: #e7ecef;
   padding: 7rem 2rem 3rem;
@@ -143,8 +142,9 @@ header.hero-section {
   box-shadow: 0 0 20px #124559;
 }
 
-/* === Sections === */
-.skills-section, .projects-section, .contact-section h2 {
+.skills-section,
+.projects-section,
+.contact-section h2 {
   text-align: center;
 }
 
@@ -157,7 +157,6 @@ header.hero-section {
   margin: auto;
 }
 
-/* === Skills === */
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
@@ -174,7 +173,6 @@ header.hero-section {
   box-shadow: 0 0 15px rgba(187, 134, 252, 0.2);
 }
 
-/* === Projects === */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -211,7 +209,6 @@ header.hero-section {
   color: #fff;
 }
 
-/* === Contact Form === */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -250,7 +247,6 @@ header.hero-section {
   background-color: #9a5af7;
 }
 
-/* === Footer === */
 footer {
   display: flex;
   justify-content: space-between;
@@ -283,7 +279,6 @@ blockquote {
   border-left: 3px solid #028090;
 }
 
-/* === Slide Down Main Content === */
 .main-content {
   transition: transform 0.3s ease;
 }
@@ -292,7 +287,6 @@ blockquote {
   transform: translateY(300px);
 }
 
-/* === Media Queries === */
 @media screen and (max-width: 768px) {
   .hamburger {
     display: flex;
