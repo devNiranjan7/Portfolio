@@ -11,30 +11,29 @@
 </head>
 
 <body>
-  <!-- Fixed Navbar -->
   <nav class="navbar">
     <div class="logo"><img src="images/DevLogo.png" alt="Dev Niranjan" /></div>
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="hamburger" onclick="toggleMenu(this)">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#home" onclick="closeMenu()">Home</a></li>
+      <li><a href="#about" onclick="closeMenu()">About</a></li>
+      <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+      <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+      <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- Sliding Main Content (hero + all sections) -->
   <div class="main-content" id="mainContent">
-
-    <!-- Hero Section -->
     <header class="hero-section" id="home">
       <div class="hero-content">
         <div class="text">
           <h1>Hi, I'm Dev Niranjan</h1>
           <h2>Crafting the web while decoding the logic of Java and C.</h2>
-          <p>I enjoy turning real-world problems into meaningful web solutions through clean design and efficient code.
-            With a focus on responsiveness and usability, I aim to build applications that blend creativity with logic to
-            deliver impactful digital experiences.</p>
+          <p>I enjoy turning real-world problems into meaningful web solutions through clean design and efficient code. With a focus on responsiveness and usability, I aim to build applications that blend creativity with logic to deliver impactful digital experiences</p>
           <div class="social-links">
             <a href="https://github.com/devNiranjan7" target="_blank">GitHub</a>
             <a href="https://www.linkedin.com/in/dev-niranjan-5810a1337" target="_blank">LinkedIn</a>
@@ -47,16 +46,14 @@
       </div>
     </header>
 
-    <!-- About -->
     <section class="about-section" id="about">
       <h2>About Me</h2>
-      <p>Hey there! I'm Dev Niranjan, an Information Technology student at Harcourt Butler Technical University, currently
-        maintaining a CGPA of 8.68. I'm deeply passionate about frontend development and design...</p>
+      <p>Hey there! I'm Dev Niranjan, an Information Technology student at Harcourt Butler Technical University, currently maintaining a CGPA of 8.68. I'm deeply passionate about frontend development and design, always exploring new ways to build clean, responsive, and user-friendly web experiences. With a strong foundation in programming and a creative mindset, I enjoy bringing ideas to life through code while continuously learning and growing through hands-on projects.</p>
+    <p>Alongside my academic journey, I'm working in Public Relations at Notion x HBTU, where I get to blend communication and creativity to engage with the community. Whether it’s building, designing, or collaborating, I thrive at the intersection of technology and expression.</p>
       <blockquote>"Design with purpose, code with clarity, and connect with impact."</blockquote>
     </section>
 
-    <!-- Skills -->
-    <section class="skills-section">
+    <section class="skills-section" id="skills">
       <h2>Skills</h2>
       <div class="skills-grid">
         <div class="skill-category"><h3>Languages</h3><p>C, Java, JavaScript</p></div>
@@ -65,7 +62,6 @@
       </div>
     </section>
 
-    <!-- Projects -->
     <section class="projects-section" id="projects">
       <h2>My Projects</h2>
       <div class="projects-grid">
@@ -90,7 +86,6 @@
       </div>
     </section>
 
-    <!-- Contact -->
     <section class="contact-section" id="contact">
       <h2>Let's Create Something Amazing Together</h2>
       <form class="contact-form" action="https://formspree.io/f/xanjkqlv" method="POST">
@@ -101,7 +96,6 @@
       </form>
     </section>
 
-    <!-- Footer -->
     <footer>
       <p style="display: flex; align-items: center;">
         <img style="width: 120px; height: 60px;" src="images/DevLogo.png" alt="Dev Niranjan" />
@@ -113,16 +107,21 @@
         <a href="mailto:devniranjan0111@gmail.com"><img class="link-img" src="https://icongr.am/feather/mail.svg?size=24&color=4b5563" alt="email-icon" /></a>
       </div>
     </footer>
-
-  </div> <!-- End main-content -->
+  </div>
 
   <script>
-    function toggleMenu() {
+    function toggleMenu(el) {
       const navLinks = document.getElementById("navLinks");
       const mainContent = document.getElementById("mainContent");
-
+      el.classList.toggle("open");
       navLinks.classList.toggle("active");
       mainContent.classList.toggle("pushed-down");
+    }
+
+    function closeMenu() {
+      document.getElementById("navLinks").classList.remove("active");
+      document.getElementById("mainContent").classList.remove("pushed-down");
+      document.querySelector(".hamburger").classList.remove("open");
     }
   </script>
 </body>
