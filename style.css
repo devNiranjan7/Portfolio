@@ -187,7 +187,7 @@ header.hero-section {
 }
 
 .skill-category {
-  border: 2px solid #d79494;
+  border: 2px solid #8db1c6;
   box-shadow: 2px 2px 10px rgb(0, 0, 0);
   flex: 1 1 250px;
   background: #60777f;
@@ -204,11 +204,11 @@ header.hero-section {
 }
 
 .project-card {
-  background: #e6e0e0;
+  background: #d8d3d3;
   border-radius: 10px;
   padding: 1rem;
   text-align: center;
-  border: 2px solid #d79494;
+  border: 2px solid #8db1c6;
 
 }
 
@@ -220,7 +220,7 @@ header.hero-section {
 
 .project-card h3 {
   margin: 0.5rem 0;
-  color: #d79494;
+  color: #b17f7f;
 }
 
 .project-card a {
